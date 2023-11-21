@@ -1,0 +1,353 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Adopt</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'website/css/bootstrap.css'%}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{% static 'website/css/style.css'%}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'website/css/responsive.css'%}" rel="stylesheet" />
+  <!-- icon -->
+  <link rel="icon" href="{%static 'website/images/favicon.png'%}" type="image/x-icon">
+  <link rel="shortcut icon" href="{%static 'website/images/favicon.png'%}" type="image/x-icon">
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <img src="{% static 'website/images/logo.png'%}" alt="">
+            <span>
+              Jacks Animal Rescue
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pet.html">Pet's gallery </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="adopt.html"> Adopt Now </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="faq.html"> FAQ</a>
+                </li>
+              </ul>
+            
+            </div>
+            <div class="quote_btn-container  d-flex justify-content-center">
+              <a href="">
+               
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    <section>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      
+
+      <head>
+        <style>
+          /* Updated CSS for the container */
+          .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px; /* Add some space between the cards */
+          }
+      
+          /* Updated card width for three cards */
+          .card {
+            flex: 0 0 calc(33.33% - 20px); /* Adjust the width and gap as needed */
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          }
+      
+          /* Other existing card styles */
+          .card h2 {
+            margin-top: 0;
+          }
+      
+          .card p {
+            margin-bottom: 0;
+          }
+      
+          .card img {
+            
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+          }
+      
+          .apply-button {
+            background-color: #023b48;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+          }
+        </style>
+      </head>
+      
+      <body class="sub_page">
+        
+        <!--Row 1-->
+          <section>
+            <div class="container">
+              <div class="card">
+                <div>
+                  <img src="{% static 'website/images/cindy.png'%}" alt="Image 1">
+                  <h2>Cindy</h2>
+                </div>
+                <p>Age: 11-12 months
+                  <br>Gender: Female
+                  <br>Completed Vetted
+                </p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuD4RjDlrqOFjSsf1rENyi47WSV0zzSY9YFW6Wu-SMnpcUGA/viewform?usp=sf_link" class="apply-button">Apply</a>
+              </div>
+      
+              <div class="card">
+                <div>
+                  <img src="{% static 'website/images/sparky.png'%}" alt="Image 2">
+                  <h2>Sparky</h2>
+                </div>
+                <p>Age:1-2 years
+                  <br>Gender:Male
+                  <br>Vaccimated and Dewormed
+                </p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuD4RjDlrqOFjSsf1rENyi47WSV0zzSY9YFW6Wu-SMnpcUGA/viewform?usp=sf_link" class="apply-button">Apply</a>
+              </div>
+      
+              <div class="card">
+                <div>
+                  <img src="{% static 'website/images/milo_2.png'%}" alt="Image 3">
+                  <h2>Milo</h2>
+                </div>
+                <p>Age: 1 year
+                  <br>Gender: Male
+                  <br>Loves: Hiking
+                </p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuD4RjDlrqOFjSsf1rENyi47WSV0zzSY9YFW6Wu-SMnpcUGA/viewform?usp=sf_link" class="apply-button">Apply</a>
+              </div>
+            </div>
+          </section>
+          <!-- ... (your existing info section and script references) ... -->
+        </div>
+      </body>
+
+        
+
+    </section>
+
+
+      <!--Row 2-->
+      <br>
+      <br>
+      <section>
+        <div class="container">
+          <div class="card">
+            <div>
+              <img src="{% static 'website/images/Benny.jpeg'%}" alt="Image 1">
+              <h2>Benny</h2>
+            </div>
+            <p>Age: 7 weeks
+              <br>Gender: Male
+              <br>1/3 2DAPP
+            </p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuD4RjDlrqOFjSsf1rENyi47WSV0zzSY9YFW6Wu-SMnpcUGA/viewform?usp=sf_link" class="apply-button">Apply</a>
+          </div>
+  
+          <div class="card">
+            <div>
+              <img src="{% static 'website/images/angle.jpeg'%}" alt="Image 2">
+              <h2>Angle</h2>
+            </div>
+            <p>1-2 years
+              <br>Gender: Female
+              <br>2DAPP and Rabies shot. Puppies born Aug 19 2023 
+            </p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuD4RjDlrqOFjSsf1rENyi47WSV0zzSY9YFW6Wu-SMnpcUGA/viewform?usp=sf_link" class="apply-button">Apply</a>
+          </div>
+  
+          <div class="card">
+            <div>
+              <img src="{% static 'website/images/jerry.jpeg'%}" alt="Image 3">
+              <h2>Jerry</h2>
+            </div>
+            <p>Age: 1-2 years
+              <br>Gender: Male
+              <br>Completly vetted
+            </p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuD4RjDlrqOFjSsf1rENyi47WSV0zzSY9YFW6Wu-SMnpcUGA/viewform?usp=sf_link" class="apply-button">Apply</a>
+          </div>
+        </div>
+      </section>
+      <!-- ... (your existing info section and script references) ... -->
+    </div>
+  </body>
+
+    
+<!--Row 2-->
+<br>
+<br>
+<section>
+  <div class="container">
+    <div class="card">
+      <div>
+        <img src="{% static 'website/images/Embers.jpeg'%}" alt="Image 1">
+        <h2>Embers</h2>
+      </div>
+      <p>Age: 1 year
+        <br>Gender: Male
+        <br> Very Energetic 
+      </p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuD4RjDlrqOFjSsf1rENyi47WSV0zzSY9YFW6Wu-SMnpcUGA/viewform?usp=sf_link" class="apply-button">Apply</a>
+    </div>
+
+    <div class="card">
+      <div>
+        <img src="{% static 'website/images/puppies.jpeg'%}" alt="Image 2">
+        <h2>Puppies!</h2>
+      </div>
+      <p> 6 9 week old puppues
+        <br> The black and grayish ones are male,
+        <br> the remaining being female
+      </p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuD4RjDlrqOFjSsf1rENyi47WSV0zzSY9YFW6Wu-SMnpcUGA/viewform?usp=sf_link" class="apply-button">Apply</a>
+    </div>
+
+   
+</section>
+<!-- ... (your existing info section and script references) ... -->
+</div>
+</body>
+
+
+
+</section>
+
+
+
+</section>
+  
+
+
+  <!-- info section -->
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="info_items">
+        <a href="about.html">
+          <div class="item ">
+            <div class="img-box box-1">
+              <img src="about.html" alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                Location
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="contact.html">
+          <div class="item ">
+            <div class="img-box box-3">
+              <img src="contact.html" alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                Email
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.facebook.com/groups/jacksanimalrescue">
+          <div class="item ">
+            <div class="img-box box-4">
+              <img src="facebook.png" alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                Facebook
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/jacks_animal_rescue/?hl=en">
+          <div class="item ">
+            <div class="img-box box-5">
+              <br>
+        
+            </div>
+            <div class="detail-box">
+              <p>
+                Instagram
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+ 
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</body>
+  </div>
+
+</html>
