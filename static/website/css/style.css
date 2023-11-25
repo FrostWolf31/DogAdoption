@@ -15,6 +15,7 @@ card p {
 }
 
 
+
 body {
   font-family: "Poppins", sans-serif;
   color: #0c0c0c;
@@ -311,6 +312,8 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -319,6 +322,17 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+    justify-content: center;
+}
+
+
+
+
+
+.service-right
+{
+  max-width: 100%;
+  margin-left: 28px;
 }
 
 .service_section .img_box {
@@ -335,14 +349,17 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          justify-content: center;
 }
 
 .service_section .img_box img {
   width: 45px;
+  justify-content: center;
 }
 
 .service_section .detail_box {
   margin-top: 25px;
+  justify-content: center;
 }
 
 .service_section .detail_box h6 {
@@ -650,5 +667,45 @@ a:focus {
   background-color: transparent;
   color: #023b48;
 }
+
+.twoColumnsInverse
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+.left {
+  max-width: 100%;
+  margin-right: 28px;
+}
+
+
+/* about page style formating */
+
+.twoColumns-ab
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.responsive-ab {
+  max-width: 100%;
+  height: auto;
+}
+
+.right-ab {
+  max-width: 100%;
+  margin-left: 10px;
+} 
+
+
+/* Adjust other styles as needed */
+
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
