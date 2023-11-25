@@ -115,6 +115,7 @@ body {
   color: #434242;
   text-align: center;
   text-transform: uppercase;
+  z-index: 999999999;
 }
 
 a,
@@ -141,6 +142,7 @@ a:focus {
   font-weight: bold;
   font-size: 24px;
   color: #fafcfd;
+  z-index: 999999999;
 }
 
 .custom_nav-container .nav_search-btn {
@@ -156,6 +158,7 @@ a:focus {
 
 .navbar-brand {
   display: -webkit-box;
+  z-index: 999999999;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
@@ -165,11 +168,13 @@ a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+          
 }
 
 .navbar-brand img {
   width: 30px;
   margin-right: 5px;
+  z-index: 999999999;
 }
 
 .navbar-brand span {
@@ -177,6 +182,7 @@ a:focus {
   font-weight: 700;
   color: #191919;
   margin-top: 5px;
+  z-index: 999999999;
 }
 
 .custom_nav-container {
@@ -186,11 +192,13 @@ a:focus {
 
 .custom_nav-container .navbar-toggler {
   outline: none;
+  z-index: 999999999;
 }
 
 .custom_nav-container .navbar-toggler .navbar-toggler-icon {
   background-image: url(../images/menu.png);
   background-size: 55px;
+  z-index: 999999999;
 }
 
 /*end header section*/
