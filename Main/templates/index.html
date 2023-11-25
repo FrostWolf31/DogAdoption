@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
   <meta name="keywords" content="" />
   <meta name="description" content="" />
@@ -125,8 +125,7 @@
     </section>
     <!-- end slider section -->
   </div>
-  <div id="dynamicImage" style="position: absolute; top: 1100px; left: 300px;"></div>
-
+ 
   <!-- about section -->
 
   <section class="about_section layout_padding">
@@ -140,8 +139,11 @@
           </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="detail-box">
+        <div class = "twoColumns">
+          <div class = "left">
+            <img src = "{% static 'website/images/BonniePuppies.png'%}" alt = "">
+          </div>
+          <div class = "right">
             <h2 class="custom_heading">
               About Our 
               <span>
@@ -160,8 +162,8 @@
               <br>When you adopt from Jack's Animal Rescue, you are not alone!
               Our team will support you every step of the way to help you find and save your new best friend.
             </p>
-            <div>
-              <a href="about.html">
+            <div class = "btn-box">
+              <a href="about.html" class = "btn-1">
                 About More
               </a>
             </div>
@@ -230,29 +232,8 @@
     </div>
   </section>
 
-  <script>
-    // Function to create and append the image dynamically
-    function loadDynamicImage() {
-      var dynamicImageContainer = document.getElementById("dynamicImage");
-
-      // Create a new image element
-      var dynamicImg = new Image();
-
-      // Set the source of the image dynamically
-      dynamicImg.src = "{% static 'website/images/BonniePuppies.png' %}";
-
-      // Add styles if needed
-      dynamicImg.style.width = "400px"; // Adjust the width as needed
-
-      // Append the image to the container
-      dynamicImageContainer.appendChild(dynamicImg);
-    }
-       // Call the function when the page loads or use any other event trigger
-       window.onload = function () {
-      loadDynamicImage();
-    };
-  </script>
+ 
 </body>
-
+</body>
 
 </html>
