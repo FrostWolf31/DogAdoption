@@ -507,6 +507,7 @@ a:focus {
 
 .map_section .form_container {
   position: relative;
+  justify-content: center;
   width: 60%;
   
   z-index: 9;
@@ -545,6 +546,13 @@ a:focus {
 .map_section .form_container button:hover {
   background-color: transparent;
   color: #023b48;
+}
+
+.right-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px; 
 }
 
 .image {
@@ -715,6 +723,7 @@ a:focus {
 
 /* Adjust other styles as needed */
 /*  quick links   */
+
 
 
 /* end footer section*/
