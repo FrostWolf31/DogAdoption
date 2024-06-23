@@ -1,18 +1,44 @@
-card {
-  width: 300px;
+.storycard {
+  flex: 0 0 calc(33.33% - 20px);
   background-color: #f0f0f0;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
 }
 
-card h2 {
+.storycard h2 {
   margin-top: 0;
 }
 
-card p {
+.storycard p {
   margin-bottom: 0;
 }
+
+.storycard img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.storybutton {
+  background-color: #023b48;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+
+
 
 
 
@@ -719,6 +745,7 @@ a:focus {
   max-width: 100%;
   margin-left: 10px;
 } 
+
 
 
 /* Adjust other styles as needed */

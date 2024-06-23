@@ -40,6 +40,11 @@ def faq(request):
 def select(request):
     return render(request, 'dogselect.html', {})
 
+def story(request):
+    return render(request, 'stories.html', {})
 
+
+def article1(request):
+    return render(request,"article1.html", {})
 
 
