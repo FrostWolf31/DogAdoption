@@ -1,4 +1,4 @@
-{% load static %}
+{%load static%}
 <!DOCTYPE html>
 <html>
 
@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>FAQ</title>
+  <title>Adopt</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
@@ -28,13 +28,13 @@
   <!-- responsive style -->
   <link href="{% static 'website/css/responsive.css'%}" rel="stylesheet" />
   <!-- icon -->
-  <link rel="icon" href="{% static 'website/images/favicon.png'%}" type="image/x-icon">
-  <link rel="shortcut icon" href="{% static 'website/images/favicon.png'%}" type="image/x-icon">
+  <link rel="icon" href="{%static 'website/images/favicon.png'%}" type="image/x-icon">
+  <link rel="shortcut icon" href="{%static 'website/images/favicon.png'%}" type="image/x-icon">
 </head>
 
 <body class="sub_page">
   <div class="hero_area">
-    <!-- header section starts -->
+    <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
@@ -45,107 +45,191 @@
             </span>
           </a>
           <div class="links-container" style="justify-content: center;">
-            <a href="index.html" style="font-size: 20px; color: #6c757d;"> HOME </a>
-            <a href="about.html" style="font-size: 20px; color: #6c757d;"> ABOUT US </a>
-            <a href="pet.html" style="font-size: 20px; color: #6c757d;"> PET'S GALLERY </a>
-            <a href="contact.html" style="font-size: 20px; color: #6c757d;"> CONTACT US </a>
-            <a href="adopt.html" style="font-size: 20px; color: #6c757d;"> ADOPT NOW </a>
-            <a href="stories.html" style="font-size: 20px; color: #6c757d;"> STORIES </a>
-            <a href="faq.html" style="font-size: 20px; color: #6c757d;"> FAQ </a>
+            <a  href="index.html" style="font-size: 20px; color: #6c757d;">   HOME </a>
+            <a  href="about.html" style="font-size: 20px; color: #6c757d;">   ABOUT US </a>
+            <a  href="pet.html" style="font-size: 20px; color: #6c757d;">   PET'S GALLERY </a>
+            <a  href="contact.html" style="font-size: 20px; color: #6c757d;">   CONTACT US </a>
+            <a  href="adopt.html" style="font-size: 20px; color: #6c757d;">   ADOPT NOW </a>
+            <a  href="stories.html" style="font-size: 20px; color: #6c757d;">   STORIES </a>
+            <a  href="faq.html" style="font-size: 20px; color: #6c757d;">   FAQ </a>
+            
             <style>
               .links-container a {
-                margin-right: 20px;
+                  margin-right: 20px; 
               }
+          
               .links-container {
-                padding: 10px;
+                  padding: 10px; 
               }
-            </style>
-          </div>
-          <div class="quote_btn-container d-flex justify-content-center">
-            <a href="">
-            </a>
+          </style>
+            
+            </div>
+            <div class="quote_btn-container  d-flex justify-content-center">
+              <a href="">
+               
+              </a>
+            </div>
           </div>
         </nav>
       </div>
     </header>
     <!-- end header section -->
 
-    <!-- Card Section-->
-    <!--Row 1-->
     <section>
-     
-        <div class="storycard">
-          <div>
-            <img src="{% static 'website/images/LucianNRavenCover.jpg'%}" alt="Image 1">
-            <h2>Lucian and Raven</h2>
-            <p>An amazing story about an unlikely adoption.</p>
-            <a href="article1.html" class="storybutton">View Story</a>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      
+
+      <head>
+        <style>
+          /* Updated CSS for the container */
+          .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px; /* Add some space between the cards */
+          }
+      
+          /* Updated card width for three cards */
+          .card {
+            flex: 0 0 calc(33.33% - 20px); /* Adjust the width and gap as needed */
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          }
+      
+          /* Other existing card styles */
+          .card h2 {
+            margin-top: 0;
+          }
+      
+          .card p {
+            margin-bottom: 0;
+          }
+      
+          .card img {
+            
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+          }
+      
+          .apply-button {
+            background-color: #023b48;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+          }
+        </style>
+      </head>
+      
+      <body class="sub_page">
+        
+        <!--Row 1-->
+          <section>
+            <div class="container">
+              <div class="card">
+                <div>
+                  <img src="{% static 'website/images/LucianNRavenCover.jpg'%}" alt="Image 1">
+                  <h2>Lucian and Raven</h2>
+                </div>
+                <p>
+                  A wonderful story about the healing power of a dog.
+                </p>
+                <a href="article1.html" class="apply-button">View Story</a>
+              </div>
+
+              <div class="card">
+                <div>
+                  <img src="{% static 'website/images/sparky.png'%}" alt="Image 2">
+                  <h2>More Stories Coming Soon!</h2>
+                </div>
+                <p> More stories coming soon!
+                </p>
+                <a href="index.html" class="apply-button">Back to Home</a>
+              </div>
+            </div>
+          </section>
+
+          
+         
+         
+          
+  
+
+
+  <!-- info section -->
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="info_items">
+        <a href="about.html">
+          <div class="item ">
+            <div class="img-box box-1">
+              <img src="about.html" alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                Location
+              </p>
+            </div>
           </div>
-        </div>
-       
-    
-   
-    <!-- End of Card Section-->
-
-    <!-- info section -->
-    <section class="info_section layout_padding2">
-      <div class="container">
-        <div class="info_items">
-          <a href="about.html">
-            <div class="item">
-              <div class="img-box box-1">
-                <img src="about.html" alt="">
-              </div>
-              <div class="detail-box">
-                <p>
-                  Location
-                </p>
-              </div>
+        </a>
+        <a href="contact.html">
+          <div class="item ">
+            <div class="img-box box-3">
+              <img src="contact.html" alt="">
             </div>
-          </a>
-          <a href="contact.html">
-            <div class="item">
-              <div class="img-box box-3">
-                <img src="contact.html" alt="">
-              </div>
-              <div class="detail-box">
-                <p>
-                  Email
-                </p>
-              </div>
+            <div class="detail-box">
+              <p>
+                Email
+              </p>
             </div>
-          </a>
-          <a href="https://www.facebook.com/groups/jacksanimalrescue">
-            <div class="item">
-              <div class="img-box box-4">
-                <img src="facebook.png" alt="">
-              </div>
-              <div class="detail-box">
-                <p>
-                  Facebook
-                </p>
-              </div>
+          </div>
+        </a>
+        <a href="https://www.facebook.com/groups/jacksanimalrescue">
+          <div class="item ">
+            <div class="img-box box-4">
+              <img src="facebook.png" alt="">
             </div>
-          </a>
-          <a href="https://www.instagram.com/jacks_animal_rescue/?hl=en">
-            <div class="item">
-              <div class="img-box box-5">
-                <br>
-              </div>
-              <div class="detail-box">
-                <p>
-                  Instagram
-                </p>
-              </div>
+            <div class="detail-box">
+              <p>
+                Facebook
+              </p>
             </div>
-          </a>
-        </div>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/jacks_animal_rescue/?hl=en">
+          <div class="item ">
+            <div class="img-box box-5">
+              <br>
+        
+            </div>
+            <div class="detail-box">
+              <p>
+                Instagram
+              </p>
+            </div>
+          </div>
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
+ 
 
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-  </div>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
 </body>
+  </div>
 
 </html>
