@@ -1,18 +1,18 @@
-{%load static%}
+{% load static %}
 <!DOCTYPE html>
 <html>
-
+ 
 <head>
   <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
+ 
   <!-- Site Metas -->
   <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+  <meta name="description" content="Jacks" />
+  <meta name="author" content="Steven Champagne" />
 
-  <title>Adopt</title>
+  <title>Jack's Animal Rescue</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
@@ -32,246 +32,115 @@
   <link rel="shortcut icon" href="{%static 'website/images/favicon.png'%}" type="image/x-icon">
 </head>
 
-<body class="sub_page">
+<body>
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
-            <img src="{% static 'website/images/logo.png'%}" alt="">
-            <span>
-              Jacks Animal Rescue
+              <span>
+              Jack's Animal Rescue
             </span>
           </a>
-          <div class="links-container" style="justify-content: center;">
-            <a  href="index.html" style="font-size: 20px; color: #6c757d;">   HOME </a>
-            <a  href="about.html" style="font-size: 20px; color: #6c757d;">   ABOUT US </a>
-            <a  href="pet.html" style="font-size: 20px; color: #6c757d;">   PET'S GALLERY </a>
-            <a  href="contact.html" style="font-size: 20px; color: #6c757d;">   CONTACT US </a>
-            <a  href="adopt.html" style="font-size: 20px; color: #6c757d;">   ADOPT NOW </a>
-            <a  href="stories.html" style="font-size: 20px; color: #6c757d;">   STORIES </a>
-            <a  href="faq.html" style="font-size: 20px; color: #6c757d;">   FAQ </a>
-            
-            <style>
-              .links-container a {
-                  margin-right: 20px; 
-              }
           
-              .links-container {
-                  padding: 10px; 
-              }
-          </style>
-            
-            </div>
-            <div class="quote_btn-container  d-flex justify-content-center">
-              <a href="">
-               
-              </a>
-            </div>
+          <div class="links-container" style="justify-content: center;">
+            <a href="index.html" style="font-size: 20px; color: #6c757d;">HOME</a>
+            <a href="about.html" style="font-size: 20px; color: #6c757d;">ABOUT US</a>
+            <a href="pet.html" style="font-size: 20px; color: #6c757d;">PET'S GALLERY</a>
+            <a href="contact.html" style="font-size: 20px; color: #6c757d;">CONTACT US</a>
+            <a href="adopt.html" style="font-size: 20px; color: #6c757d;">ADOPT NOW</a>
+            <a href="stories.html" style="font-size: 20px; color: #6c757d;">STORIES</a>
+            <a href="faq.html" style="font-size: 20px; color: #6c757d;">FAQ</a>
           </div>
         </nav>
       </div>
     </header>
     <!-- end header section -->
 
-    <section>
+    <style>
+        .dog-container-wrapper {
+          display: flex;
+          justify-content: center;
+        }
 
-      <br>
-      <br>
-      <br>
-      <br>
-      
+        .dog-container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 30px;
+          margin: 30px 0;
+          max-width: 1200px;
+          width: 100%;
+          padding: 0 12px;
+          box-sizing: border-box;
+        }
 
-      <head>
-        <style>
-          /* Updated CSS for the container */
-          .container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px; /* Add some space between the cards */
-          }
-      
-          /* Updated card width for three cards */
-          .card {
-            flex: 0 0 calc(33.33% - 20px); /* Adjust the width and gap as needed */
-            background-color: #f0f0f0;
-            border-radius: 5px;
-            padding: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-          }
-      
-          /* Other existing card styles */
-          .card h2 {
-            margin-top: 0;
-          }
-      
-          .card p {
-            margin-bottom: 0;
-          }
-      
-          .card img {
-            
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-          }
-      
-          .apply-button {
-            background-color: #023b48;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-          }
-        </style>
-      </head>
-      
-      <body class="sub_page">
-        
-        <!--Row 1-->
-          <section>
-            <div class="container">
-              <div class="card">
-                <div>
-                  <img src="{% static 'website/images/cindy.png'%}" alt="Image 1">
-                  <h2>Cindy</h2>
-                </div>
-                <p>Age: 11-12 months
-                  <br>Gender: Female
-                  <br>Completed Vetted
-                </p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuD4RjDlrqOFjSsf1rENyi47WSV0zzSY9YFW6Wu-SMnpcUGA/viewform?usp=sf_link" class="apply-button">Apply</a>
-              </div>
-      
-              <div class="card">
-                <div>
-                  <img src="{% static 'website/images/sparky.png'%}" alt="Image 2">
-                  <h2>Sparky</h2>
-                </div>
-                <p>Age:1-2 years
-                  <br>Gender:Male
-                  <br>Vaccimated and Dewormed
-                </p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuD4RjDlrqOFjSsf1rENyi47WSV0zzSY9YFW6Wu-SMnpcUGA/viewform?usp=sf_link" class="apply-button">Apply</a>
-              </div>
-      
-              <div class="card">
-                <div>
-                  <img src="{% static 'website/images/milo_2.png'%}" alt="Image 3">
-                  <h2>Milo</h2>
-                </div>
-                <p>Age: 1 year
-                  <br>Gender: Male
-                  <br>Loves: Hiking
-                </p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuD4RjDlrqOFjSsf1rENyi47WSV0zzSY9YFW6Wu-SMnpcUGA/viewform?usp=sf_link" class="apply-button">Apply</a>
-              </div>
-            </div>
-          </section>
-          <!-- ... (your existing info section and script references) ... -->
-        </div>
-      </body>
+        .dog-card {
+          flex: 0 0 calc(33.333% - 20px);
+          background: #f7f7f7;
+          border-radius: 6px;
+          padding: 16px;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
 
-        
+        .dog-card img {
+          max-width: 100%;
+          height: auto;
+          display: block;
+          margin-bottom: 10px;
+          border-radius: 4px;
+        }
 
-    </section>
+        .apply-button {
+          background-color: #023b48;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-top: 10px;
+        }
 
+        @media (max-width: 992px) {
+          .dog-card { flex: 0 0 calc(50% - 20px); }
+        }
 
-      <!--Row 2-->
-      <br>
-      <br>
+        @media (max-width: 576px) {
+          .dog-card { flex: 0 0 100%; }
+        }
+      </style>
+
       <section>
-        <div class="container">
-          <div class="card">
-            <div>
-              <img src="{% static 'website/images/Benny.jpeg'%}" alt="Image 1">
-              <h2>Benny</h2>
+        <div class="dog-container-wrapper">
+          <div class="dog-container">
+          {% for dog in dogs %}
+            <div class="dog-card">
+              {% if dog.image %}
+                <img src="{{ dog.image.url }}" alt="{{ dog.name }}">
+              {% else %}
+                <img src="{% static 'website/images/puppies.jpeg' %}" alt="{{ dog.name }}">
+              {% endif %}
+              <h2>{{ dog.name }}</h2>
+              <p>
+                {% if dog.age_text %}Age: {{ dog.age_text }}<br>{% endif %}
+                {% if dog.gender %}Gender: {{ dog.gender }}<br>{% endif %}
+                {{ dog.description|linebreaksbr }}
+              </p>
+              <a href="{% if dog.apply_url %}{{ dog.apply_url }}{% else %}https://docs.google.com/forms/d/e/1FAIpQLSeuD4RjDlrqOFjSsf1rENyi47WSV0zzSY9YFW6Wu-SMnpcUGA/viewform?usp=sf_link{% endif %}" class="apply-button">Apply</a>
             </div>
-            <p>Age: 7 weeks
-              <br>Gender: Male
-              <br>1/3 2DAPP
-            </p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuD4RjDlrqOFjSsf1rENyi47WSV0zzSY9YFW6Wu-SMnpcUGA/viewform?usp=sf_link" class="apply-button">Apply</a>
-          </div>
-  
-          <div class="card">
-            <div>
-              <img src="{% static 'website/images/angle.jpeg'%}" alt="Image 2">
-              <h2>Angle</h2>
-            </div>
-            <p>1-2 years
-              <br>Gender: Female
-              <br>2DAPP and Rabies shot. Puppies born Aug 19 2023 
-            </p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuD4RjDlrqOFjSsf1rENyi47WSV0zzSY9YFW6Wu-SMnpcUGA/viewform?usp=sf_link" class="apply-button">Apply</a>
-          </div>
-  
-          <div class="card">
-            <div>
-              <img src="{% static 'website/images/jerry.jpeg'%}" alt="Image 3">
-              <h2>Jerry</h2>
-            </div>
-            <p>Age: 1-2 years
-              <br>Gender: Male
-              <br>Completly vetted
-            </p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuD4RjDlrqOFjSsf1rENyi47WSV0zzSY9YFW6Wu-SMnpcUGA/viewform?usp=sf_link" class="apply-button">Apply</a>
+          {% empty %}
+            <p>No dogs available at the moment. Check back later.</p>
+          {% endfor %}
           </div>
         </div>
       </section>
-      <!-- ... (your existing info section and script references) ... -->
-    </div>
-  </body>
 
-    
-<!--Row 3-->
-<br>
-<br>
-<section>
-  <div class="container">
-    <div class="card">
-      <div>
-        <img src="{% static 'website/images/Embers.jpeg'%}" alt="Image 1">
-        <h2>Embers</h2>
-      </div>
-      <p>Age: 1 year
-        <br>Gender: Male
-        <br> Very Energetic 
-      </p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuD4RjDlrqOFjSsf1rENyi47WSV0zzSY9YFW6Wu-SMnpcUGA/viewform?usp=sf_link" class="apply-button">Apply</a>
-    </div>
-
-    <div class="card">
-      <div>
-        <img src="{% static 'website/images/Elvis.png'%}" alt="Image 2">
-        <h2>Elvis</h2>
-      </div>
-      <p>Age:2(in June) Gender:Male
-        <br> This sweet guy loves attention from everyone!
-        <br> He is completely kennel trained, is happy to sit through brushes and is learning to walk on a leash.
-        <br> neutered, needs a booster vaccine in 2 weeks.
-      </p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuD4RjDlrqOFjSsf1rENyi47WSV0zzSY9YFW6Wu-SMnpcUGA/viewform?usp=sf_link" class="apply-button">Apply</a>
-    </div>
-
-    <div class="card">
-      <div>
-        <img src="{% static 'website/images/puppies.jpeg'%}" alt="Image 2">
-        <h2>Puppies!</h2>
-      </div>
-      <p> 6 9 week old puppues
-        <br> The black and grayish ones are male,
-        <br> the remaining being female
-      </p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuD4RjDlrqOFjSsf1rENyi47WSV0zzSY9YFW6Wu-SMnpcUGA/viewform?usp=sf_link" class="apply-button">Apply</a>
-    </div>
+  <!-- info section -->
+           
        
 </section>
 <!-- ... (your existing info section and script references) ... -->

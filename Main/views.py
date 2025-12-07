@@ -38,7 +38,12 @@ def faq(request):
     return render(request, 'faq.html' , {})
 
 def select(request):
-    return render(request, 'dogselect.html', {})
+    try:
+        from .models import Dog
+        dogs = Dog.objects.filter(is_available=True).order_by('order')
+    except Exception:
+        dogs = []
+    return render(request, 'dogselect.html', {'dogs': dogs})
 
 def story(request):
     return render(request, 'stories.html', {})
