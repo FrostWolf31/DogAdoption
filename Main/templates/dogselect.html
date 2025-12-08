@@ -133,7 +133,15 @@
               <a href="{% if dog.apply_url %}{{ dog.apply_url }}{% else %}https://docs.google.com/forms/d/e/1FAIpQLSeuD4RjDlrqOFjSsf1rENyi47WSV0zzSY9YFW6Wu-SMnpcUGA/viewform?usp=sf_link{% endif %}" class="apply-button">Apply</a>
             </div>
           {% empty %}
-            <p>No dogs available at the moment. Check back later.</p>
+            {% if db_error %}
+              <div style="padding: 20px; background-color: #f8d7da; border: 1px solid #f5c6cb; border-radius: 4px; color: #721c24;">
+                <p><strong>Database Connection Error:</strong></p>
+                <p>{{ db_error }}</p>
+                <p>Please contact us at <a href="mailto:jacksanimalrescue@gmail.com">jacksanimalrescue@gmail.com</a> for more information about available dogs.</p>
+              </div>
+            {% else %}
+              <p>No dogs available at the moment. Check back later.</p>
+            {% endif %}
           {% endfor %}
           </div>
         </div>

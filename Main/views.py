@@ -38,12 +38,19 @@ def faq(request):
     return render(request, 'faq.html' , {})
 
 def select(request):
+    dogs = []
+    db_error = None
     try:
         from .models import Dog
+        from django.db import connection
+        # Test database connection first
+        with connection.cursor() as cursor:
+            cursor.execute("SELECT 1")
         dogs = Dog.objects.filter(is_available=True).order_by('order')
-    except Exception:
+    except Exception as e:
+        db_error = "Database connection unavailable. Please try again later."
         dogs = []
-    return render(request, 'dogselect.html', {'dogs': dogs})
+    return render(request, 'dogselect.html', {'dogs': dogs, 'db_error': db_error})
 
 def story(request):
     return render(request, 'stories.html', {})
