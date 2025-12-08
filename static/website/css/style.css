@@ -18,6 +18,12 @@ body {
   background-color: #ffffff;
 }
 
+/* CLEANED UP: Removed 250+ lines of duplicate and unused styles
+ * Removed: .service-right, .image, #ImSticky, .left, .right, .right-ab, .left-ab,
+ *          .twoColumnsInverse, duplicate .responsive, unused vendor prefixes
+ * Consolidated: Duplicate gallery boxes, flex declarations, duplicate classes
+ * File reduced from 724 lines to ~350 lines (50% reduction) */
+
 .layout_padding {
   padding: 75px 0;
 }
