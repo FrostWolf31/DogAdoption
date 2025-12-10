@@ -68,8 +68,9 @@ WSGI_APPLICATION = 'DogRescue.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 if os.getenv('DATABASE_URL'):
+    # Use dj-database-url to parse DATABASE_URL and require SSL in production
     DATABASES = {
-        'default': dj_database_url.config(default=os.getenv('DATABASE_URL'), conn_max_age=600)
+        'default': dj_database_url.config(default=os.getenv('DATABASE_URL'), conn_max_age=600, ssl_require=True)
     }
 else:
     DATABASES = {
