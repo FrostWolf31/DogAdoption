@@ -726,4 +726,140 @@ a:focus {
 
 
 /* end footer section*/
+
+/* ===== MOBILE RESPONSIVE IMPROVEMENTS ===== */
+@media (max-width: 768px) {
+  .hero_area {
+    height: auto;
+    padding: 40px 15px;
+  }
+
+  .slider_detail-box h1 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .slider_detail-box p {
+    margin-top: 18px;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  .slider_detail-box .btn-box .btn-1,
+  .slider_detail-box .btn-box .btn-2,
+  .twoColumns .btn-box .btn-1,
+  .buy_section a,
+  .map_section .form_container button,
+  .about_section .detail-box a {
+    width: 100%;
+    padding: 12px 18px;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .custom_nav-container .navbar-nav .nav-link {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .header_section .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .gallery-section .img_box.box-1,
+  .gallery-section .img_box.box-2,
+  .gallery-section .img_box.box-3,
+  .gallery-section .img_box.box-4,
+  .gallery-section .img_box.box-5 {
+    width: 100%;
+  }
+
+  .service_section .row .col-md-4 {
+    flex-direction: column;
+    padding: 12px 0;
+  }
+
+  .twoColumns,
+  .twoColumnsInverse,
+  .twoColumns-ab {
+    flex-direction: column;
+  }
+
+  .info_items {
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .client_section .client_container {
+    flex-direction: column;
+    padding: 15px;
+    border: none;
+  }
+
+  .map_section .form_container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .map_section .form_container form {
+    padding: 30px;
+    margin: 20px 0;
+  }
+
+  .right-image {
+    display: none;
+  }
+
+  .footer_section {
+    padding: 20px 12px;
+    text-align: center;
+  }
+
+  .carousel-indicators {
+    bottom: -5%;
+  }
+
+  .slider_img-box {
+    margin-right: 0;
+  }
+
+  .header_section .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  img.responsive,
+  .responsive,
+  .responsive-ab {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+/* Extra small screens (phones) */
+@media (max-width: 480px) {
+  .slider_detail-box h1 {
+    font-size: 22px;
+  }
+
+  .navbar-brand span {
+    font-size: 18px;
+  }
+
+  .header_section .logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .map_section .form_container input {
+    padding-top: 18px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
